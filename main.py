@@ -15,10 +15,9 @@ def predict():
     data = outlier(data, data.columns)
     data = imput_missing(data)
     prediction = model.predict(data)
-    classes_x=np.argmax(prediction, axis=1)
     predict = []
-    for x in classes_x:
-        if x == 0:
+    for x in prediction:
+        if x <= 0.5:
             predict.append("Default")
         else:
             predict.append("Not Default")    
