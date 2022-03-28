@@ -15,6 +15,6 @@
 
 # Output
 
-Setelah send data, output akan berbentuk: default or not default.
+Setelah send data, output akan berbentuk: default or not default (cek file response.json).
 
 ![Screenshot](prediction.jpg)
